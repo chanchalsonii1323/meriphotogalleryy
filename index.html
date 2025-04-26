@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meri Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meri Photo Gallery</h1>
+  <div class="gallery">
+    <img src="image1.jpeg" alt="">
+    <img src="image2.jpeg" alt="">
+    <img src="image3.jpeg" alt="">
+    <img src="image4.jpeg" alt="">
+    <!-- Yahan aur photos bhi add kar sakte ho -->
+  </div>
+
+</body>
+</html>
